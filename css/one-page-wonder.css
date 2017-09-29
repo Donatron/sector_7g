@@ -43,6 +43,26 @@ header.masthead > .overlay {
   margin-top: 150px;
 }
 
+.bio {
+  width: 100%;
+  padding: 50px 0 50px 0;
+
+  text-align: center;
+}
+
+.bio h2 {
+  padding-bottom: 30px;
+}
+
+.bio p {
+  width: 50%;
+  margin: auto;
+}
+
+.profiles {
+  padding-bottom: 0;
+}
+
 footer a {
   color: #22BE02;
 }
