@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var pkg = require('./package.json');
+var imagemin = require('gulp-imagemin');
 
 // Copy vendor files from /node_modules into /vendor
 // NOTE: requires `npm install` before running!
@@ -18,6 +19,17 @@ gulp.task('copy', function() {
 
   gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
     .pipe(gulp.dest('vendor/popper'))
+})
+
+gulp.task('image-min', function() {
+  gulp.src('src/img/*/*')
+  .pipe(imagemin([
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.svgo({plugins: [{removeViewBox: true}]})
+  ]))
+  .pipe(gulp.dest('img'))
 })
 
 // Default task

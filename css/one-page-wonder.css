@@ -63,6 +63,11 @@ header.masthead > .overlay {
   padding-bottom: 0;
 }
 
+.profiles-container section:nth-child(even) {
+  background-color: #212529;
+  color: white;
+}
+
 footer a {
   color: #22BE02;
 }
