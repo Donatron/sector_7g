@@ -43,6 +43,10 @@ header.masthead > .overlay {
   margin-top: 150px;
 }
 
+.bio-container {
+  background-color: red;
+}
+
 .bio {
   width: 100%;
   padding: 50px 0 50px 0;
@@ -61,9 +65,12 @@ header.masthead > .overlay {
 
 .profiles {
   padding-bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 20px 0;
 }
 
-.profiles-container section:nth-child(even) {
+.profiles-container section:nth-child(odd) {
   background-color: #212529;
   color: white;
 }
