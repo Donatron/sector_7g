@@ -5,7 +5,9 @@
  */
 
 body {
-    padding-top: 54px;
+    margin-top: 50px;
+    padding: 0;
+    border: 0;
 }
 
 .bg-dark {
@@ -16,6 +18,14 @@ body {
     body {
         padding-top: 56px;
     }
+}
+
+.navbar {
+  position: absolute;
+}
+
+.navbar-brand {
+  padding: 0;
 }
 
 header.masthead {
@@ -97,4 +107,20 @@ footer a {
     header.masthead > .overlay {
         padding: 10rem 0;
     }
+}
+
+@media (max-width: 991px) {
+  body {
+    margin-top: 106px;
+  }
+
+  .display-1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
