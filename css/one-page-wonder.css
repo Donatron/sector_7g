@@ -115,12 +115,30 @@ footer a {
   }
 
   .display-1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     line-height: 1;
   }
 
   .display-4 {
     font-size: 2rem;
     line-height: 1;
+  }
+}
+
+@media (max-width: 614px) {
+  .display-1 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .display-4 {
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
   }
 }
