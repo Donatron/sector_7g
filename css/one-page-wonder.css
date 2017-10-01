@@ -24,14 +24,14 @@ header.masthead {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 800px;
+    height: auto;
 }
 
 header.masthead > .overlay {
     padding: 5rem 0;
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
-    height: 800px;
+    height: auto;
 }
 
 .carousel img {
