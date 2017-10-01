@@ -19,7 +19,7 @@ body {
 }
 
 header.masthead {
-    background: url('../img/band/IMG_6292.jpg') no-repeat center center scroll;
+    background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -32,6 +32,16 @@ header.masthead > .overlay {
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
     height: 800px;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
 }
 
 .logo {
