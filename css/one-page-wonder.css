@@ -38,6 +38,14 @@ header.masthead > .overlay {
   width: 100%;
 }
 
+.carousel-caption {
+  bottom: 35%;
+}
+
+.carousel-caption h1, h2 {
+  text-shadow: 1px 1px rgba(100, 100, 100, 0.4);
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
     width: 50px;
