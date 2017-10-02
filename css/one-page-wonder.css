@@ -85,6 +85,24 @@ header.masthead > .overlay {
 .bio p {
   width: 50%;
   margin: auto;
+  display: block;
+}
+
+#bio h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.music {
+  text-align: center;
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 0;
+}
+
+.music img {
+  width: 300px;
+  height: 300px;
 }
 
 .profiles {
