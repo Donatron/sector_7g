@@ -54,6 +54,8 @@ $('#next').click(function(){
   initAudio(next);
   audio.play();
   showDuration();
+  $('#play').hide();
+  $('#pause').show();
 });
 
 // Next button
@@ -67,6 +69,8 @@ $('#prev').click(function(){
   initAudio(prev);
   audio.play();
   showDuration();
+  $('#play').hide();
+  $('#pause').show();
 });
 
 // Playlist song click
