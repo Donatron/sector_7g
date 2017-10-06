@@ -13,8 +13,8 @@
     <!-- Add favicon -->
     <link rel="icon" type="image/jpg" href="img/logo/sector_7g-logo.jpg">
 
-    <!-- Add fonts -->
-    <link rel="stylesheet" type="text/css" href="/css/fonts/fonts.css" />
+    <!-- Add Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -103,20 +103,49 @@
 
           </div>
           <div class="col-md-4 push-md-7 music" id="music">
-            <img src="img/logo/drum_head.jpg" alt="">
-            <audio controls>
-              <source src="src/audio/When You Were Young .m4a" type="audio/mp3">
-            </audio>
-            <audio controls>
-              <source src="src/audio/My Hero.m4a" type="audio/mp3">
-            </audio>
-            <audio controls>
-              <source src="src/audio/Keep Your Hands Off My Girl.m4a" type="audio/mp3">
-              <source src="src/audio/Breed.mp3" type="audio/mp3">
-            </audio>
-            <audio controls>
-              <source src="src/audio/Breed.mp3" type="audio/mp3">
-            </audio>
+            <div id="audio-image">
+              <img class="cover" src="img/logo/drum_head.jpg" alt="">
+            </div>
+            <div id="audio-player">
+              <div id="audio-info">
+                <span class="artist">The Killers</span> - <span class="title">When You Were Young</span>
+              </div>
+              <input type="range" id="volume" min="0" max="10" value="5">
+              <br>
+              <div id="buttons">
+                <span>
+                  <button id="prev">
+                    <i class="fa fa-backward" aria-hidden="true"></i>
+                  </button>
+                  <button id="play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+                  <button id="pause">
+                    <i class="fa fa-pause" aria-hidden="true"></i>
+                  </button>
+                  <button id="stop">
+                    <i class="fa fa-stop" aria-hidden="true"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fa fa-forward" aria-hidden="true"></i>
+                  </button>
+                </span>
+              </div>
+              <div class="clearfix"></div>
+              <div id="tracker">
+                <div id="progress-bar">
+                  <span id="progress"></span>
+                </div>
+                <span id="duration">3:30</span>
+              </div>
+              <div class="clearfix"></div>
+              <ul id="playlist" class="hidden">
+                <li song="When You Were Young .m4a" artist="The Killers">When You Were Young .m4a</li>
+                <li song="My Hero.m4a" artist="Foo Fighters">My Hero.m4a</li>
+                <li song="Keep Your Hands Off My Girl.m4a" artist="Good Charlotte">Keep Your Hands Off My Girl.m4a</li>
+                <li song="Breed.mp3" artist="Nirvana">Breed.mp3</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -233,7 +262,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 
