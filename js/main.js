@@ -107,3 +107,8 @@ function showDuration() {
     $('#progress').css('width', value + '%');
   });
 }
+
+// Fix Navbar Toggler
+$('.navbar-collapse ul li').click(function() {
+  $('#navbarResponsive').removeClass('show');
+});

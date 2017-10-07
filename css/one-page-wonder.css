@@ -364,21 +364,30 @@ MEDIA QUERIES
     height: 25px;
   }
 
+  button#prev {
+    margin-right: 10px;
+  }
+
+  button#next {
+    margin-left: 10px;
+  }
+
   .fa-stop,
   .fa-pause,
   .fa-play {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 614px) {
-  .carousel-caption .display-1 {
-    font-size: 2rem;
+  .carousel-caption .display-1,
+  .display-4 {
+    font-size: 2.8rem;
     line-height: 1;
-    color: red;
   }
 
-  .carousel-caption .display-4 {
+  .carousel-caption .display-4,
+  .display-1 {
     font-size: 1.3rem;
     line-height: 1;
   }
