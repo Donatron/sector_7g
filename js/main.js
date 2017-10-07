@@ -124,6 +124,3 @@ $('.nav-link').click(function(e) {
 
   e.preventDefault();
 });
-
-var height = $('.navbar').height();
-console.log(height);
