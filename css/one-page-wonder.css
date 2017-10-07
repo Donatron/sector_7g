@@ -76,7 +76,7 @@ header.masthead {
     bottom: 0;
     height: 100%;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .carousel img {
@@ -85,10 +85,16 @@ header.masthead {
 
 .carousel-caption {
   bottom: 35%;
+  z-index: 11;
 }
 
 .carousel-caption h1, h2 {
   text-shadow: 1px 1px rgba(100, 100, 100, 0.4);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 11;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
