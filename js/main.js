@@ -112,3 +112,18 @@ function showDuration() {
 $('.navbar-collapse ul li').click(function() {
   $('#navbarResponsive').removeClass('show');
 });
+
+// Add smooth scrolling
+
+$('.nav-link').click(function(e) {
+  var linkHref = $(this).attr('href');
+
+  $('html, body').animate({
+    scrollTop: $(linkHref).offset().top - $('.navbar').height()
+  }, 1000);
+
+  e.preventDefault();
+});
+
+var height = $('.navbar').height();
+console.log(height);
