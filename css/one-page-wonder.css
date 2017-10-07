@@ -65,13 +65,18 @@ header.masthead {
     background-size: cover;
     -o-background-size: cover;
     height: auto;
+    position: relative;
+    top: 0;
 }
 
-header.masthead > .overlay {
-    padding: 5rem 0;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    height: auto;
+.carousel-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
 }
 
 .carousel img {
