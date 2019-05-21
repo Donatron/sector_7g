@@ -22,7 +22,7 @@ gulp.task('copy', function() {
 })
 
 gulp.task('image-min', function() {
-  gulp.src('src/img/*/*')
+  gulp.src('src/img/*')
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.jpegtran({progressive: true}),
